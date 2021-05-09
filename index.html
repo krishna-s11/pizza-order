@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/4ec9fc748c.js" crossorigin="anonymous"></script>
+    <title>Pizza Hub</title>
+</head>
+<body>
+    <div class='section-hero'>
+        <nav class='nav'>
+            <div class="logo-container">
+                <img src="assets/images/logo-2.png">
+            </div>
+            <div class='nav-content' data-aos="zoom-in-left">
+                <ul>
+                    <li><a href="#section-order">Order Online</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="content-hero">
+            <div class="content-msg" data-aos="fade-right">
+                <h3>Fresh food cafe</h3>
+                <p>What’s better than having a crispy melty pizza, you ask?</p>
+                <p>Having that crispy and melty pizza in the comfort of your own home with the ones you love, we say.</p>
+            </div>
+            <div class="content-social" data-aos='fade-up' data-aos-delay='500'>
+                <h3>Follow us @</h3>
+                <div class="social-links">
+                    <i class="fab fa-facebook" style="color: white; font-size: 30px; margin-right: 10px; cursor: pointer;"></i>
+                    <i class="fab fa-twitter" style="color: white; font-size: 30px; margin-right: 10px; cursor: pointer;"></i>
+                    <i class="fab fa-instagram" style="color: white; font-size: 30px; cursor: pointer;"></i>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="section-order" id="section-order">
+        <div class="order-top">
+            <div class="top-logo" data-aos="fade-right">
+                <img src="assets/images/logo-2.png">
+            </div>
+            <div class='nav-content' data-aos="zoom-in-left">
+                <ul>
+                    <li><a href="">Veg. Pizza</a></li>
+                    <li><a href="">Non-Veg Pizza</a></li>
+                    <li><a href="">Pizza Mania</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="order-container">
+            <h3>Pizza</h3>
+            <div class="order-main" data-aos="fade-up" data-aos-delay="500" data-aos-offset="400">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-photo">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Margherita</p>
+                            <p class="tag">Cheese</p>
+                            <p class="price"><i class="fas fa-rupee-sign"></i> 350</p>
+                        </div>
+                        <div class="order">
+                            <p>Add to cart</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-photo">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Pepperoni</p>
+                            <p class="tag">cheese,pepperoni</p>
+                            <p class="price"><i class="fas fa-rupee-sign"></i> 350</p>
+                        </div>
+                        <div class="order">
+                            <p>Add to cart</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-photo">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Capriciosa</p>
+                            <p class="tag">cheese, ham, mushroom</p>
+                            <p class="price"><i class="fas fa-rupee-sign"></i> 350</p>
+                        </div>
+                        <div class="order">
+                            <p>Add to cart</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-photo">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Garlic Fingers</p>
+                            <p class="tag">Cheese, Garlic</p>
+                            <p class="price"><i class="fas fa-rupee-sign"></i> 350</p>
+                        </div>
+                        <div class="order">
+                            <p>Add to cart</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-photo">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Pizza Grandiosa</p>
+                            <p class="tag">Jarlsberg Cheese, Pizza meat</p>
+                            <p class="price"><i class="fas fa-rupee-sign"></i> 350</p>
+                        </div>
+                        <div class="order">
+                            <p>Add to cart</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-photo">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Pizza Ortolana</p>
+                            <p class="tag">Mozzarella cheese, Zucchini</p>
+                            <p class="price"><i class="fas fa-rupee-sign"></i> 350</p>
+                        </div>
+                        <div class="order">
+                            <p>Add to cart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout" data-aos="flip-left" data-aos-delay="1000">
+                    <h3>checkout</h3>
+                    <div class="card checkout-card">
+                        <div class='title'>
+                            <p class="checkout-heading">Your order</p>
+                        </div>
+                        <div class="cart-items" id='cart-items'>
+                           
+                        </div>
+                        <div class="total">
+                            <p>Total:</p>
+                            <div style="display: flex;">
+                                <i class="fas fa-rupee-sign" style="margin-right: 5px;"></i><p id='total-price'><span></span> 0</p>
+                            </div>
+                        </div>
+                        <a class="coupon">I have a coupon</a>
+                        <a class="btn-checkout" id='index-checkout'>
+                            <p>checkout</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({duration: 1000});
+  </script>
+</html>

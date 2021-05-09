@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #171A3D;
+    font-family: 'Montserrat', sans-serif;
+}
+.card{
+    width: 450px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 20px;
+    text-align: center;
+}
+.card h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+}
+.card img{
+    width: 400px;
+    margin-top: 20px;
+}
+.card p{
+    margin-top: 30px;
+    font-size: 22px;
+}
